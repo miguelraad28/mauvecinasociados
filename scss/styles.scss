@@ -1,0 +1,16 @@
+@import "./partials/navbar.scss";
+@import "./partials/inicio.scss";
+@import "./partials/servicios.scss";
+@import "./partials/sobreNosotros.scss";
+@import "./partials/contacto.scss";
+@import "./partials/whatsappLogo.scss";
+@import "./partials/footer.scss";
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    padding-bottom: calc(200px + 2em);
+}

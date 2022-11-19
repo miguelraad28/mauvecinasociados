@@ -1,0 +1,26 @@
+#inicio {
+    gap: 50px;
+    padding: 160px 160px 60px 160px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url("./images/banner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+
+    .logoInicio {
+
+        height: 400px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .textoInicio {
+
+        overflow-wrap: break-word;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+}
