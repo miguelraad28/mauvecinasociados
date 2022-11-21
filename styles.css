@@ -189,6 +189,7 @@
   .whatsAppLogo img {
     height: 100%; }
   .whatsAppLogo:hover {
+    color: antiquewhite;
     translate: 0 -8px;
     transform: scale(1.1);
     transition: 0.5s; }
