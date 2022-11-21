@@ -1,4 +1,46 @@
+@import "../variables.scss";
 #sobreNosotros{
-    height: 1000px;
-    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .titulos{
+        text-align: center;
+        width: 80%;
+        padding: 25px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        font-weight: 400;
+        font-family: $titulos;
+    }
+    .gridSobreNosotros{
+        width: 70%;
+        gap: 30px;
+        margin: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: flex-end;
+        .imagenSobreNosotros{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 400px;
+            img{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            h2{
+                font-family: $titulos;
+            }
+        }
+        .textoSobreNosotros{
+            h2{
+                font-family: $titulos;
+                margin-bottom: 0.5em;
+            }
+            p{
+                font-size: 1.2em;
+                font-family: $subtitulos;
+            }
+        }
+    }
 }

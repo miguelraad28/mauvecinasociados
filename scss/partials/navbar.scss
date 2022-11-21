@@ -1,3 +1,4 @@
+@import "../variables.scss";
 .navbar{
     position: fixed;
     z-index: 100;
@@ -5,7 +6,7 @@
     width: 100%;
     transition: 0.6s;
     padding: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: aliceblue;
     .navbarContainer{
         width: 100%;
         justify-content: center;
@@ -23,6 +24,7 @@
             li{
                 font-size: 1.2em;
                 padding: 15px;
+                font-family: $titulos;
             }
             a{
                 color: black;
@@ -33,7 +35,7 @@
 }
 .scrollDown{
     padding: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(240, 248, 255, 0.8);
     transition: 1s;
     box-shadow: 0px 0px 5px;
 }

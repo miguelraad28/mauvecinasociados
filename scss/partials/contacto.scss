@@ -1,4 +1,16 @@
+@import "../variables.scss";
 #contacto{
-    height: 1000px;
-    background-color: aqua;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .titulos{
+        text-align: center;
+        width: 80%;
+        padding: 25px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        font-weight: 400;
+        font-family: $titulos;
+    }
 }

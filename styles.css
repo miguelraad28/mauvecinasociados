@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap");
 .navbar {
   position: fixed;
   z-index: 100;
@@ -5,7 +10,7 @@
   width: 100%;
   transition: 0.6s;
   padding: 20px;
-  background-color: white; }
+  background-color: aliceblue; }
   .navbar .navbarContainer {
     width: 100%;
     justify-content: center;
@@ -21,71 +26,157 @@
       list-style: none; }
       .navbar .navbarContainer ul li {
         font-size: 1.2em;
-        padding: 15px; }
+        padding: 15px;
+        font-family: "Montserrat", sans-serif; }
       .navbar .navbarContainer ul a {
         color: black;
         text-decoration: none; }
 
 .scrollDown {
   padding: 5px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(240, 248, 255, 0.8);
   transition: 1s;
   box-shadow: 0px 0px 5px; }
 
 #inicio {
-  gap: 50px;
-  padding: 160px 160px 60px 160px;
-  align-items: center;
-  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   background-image: url("./images/banner1.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: row; }
-  #inicio .logoInicio {
-    height: 400px; }
-    #inicio .logoInicio img {
-      height: 100%; }
-  #inicio .textoInicio {
-    overflow-wrap: break-word;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  justify-content: center;
+  animation: change 10s infinite ease-in-out; }
+  #inicio .mainContent {
+    padding: 185px 0 60px;
+    display: flex;
+    max-width: 75vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; }
+    #inicio .mainContent .logoInicio {
+      height: 400px; }
+      #inicio .mainContent .logoInicio img {
+        height: 100%; }
+    #inicio .mainContent .textoInicio {
+      font-weight: lighter;
+      line-height: 2.5em;
+      overflow-wrap: break-word;
+      font-family: "Montserrat", sans-serif; }
+      #inicio .mainContent .textoInicio button {
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1em;
+        margin-top: 12px;
+        width: 100%;
+        height: 50px;
+        font-weight: 800;
+        background-color: white;
+        border: 0;
+        border-radius: 25px;
+        box-shadow: 0px 0px 5px #717a83;
+        transition: 0.5s; }
+        #inicio .mainContent .textoInicio button p {
+          position: relative; }
+        #inicio .mainContent .textoInicio button:hover {
+          font-size: 1.1em;
+          background-color: aliceblue; }
+
+@keyframes change {
+  0% {
+    background-image: url("../../images/banner1.jpg"); }
+  33% {
+    background-image: url("../../images/banner2.jpg"); }
+  66% {
+    background-image: url("../../images/banner3.jpg"); } }
 
 #servicios {
   display: flex;
   align-items: center;
   flex-direction: column; }
-  #servicios .tituloServicios {
+  #servicios .titulos {
     text-align: center;
     width: 80%;
     padding: 25px;
     border-bottom: 1px solid black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif; }
   #servicios .gridServicios {
     gap: 1em;
     width: 80%;
-    margin-top: 25px;
+    padding-top: 30px;
+    padding-bottom: 60px;
     justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(5, 1fr); }
+  #servicios .servicio .tituloDeServicio {
+    min-height: 46px; }
   #servicios .servicio li {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.7em;
     margin-left: 15%; }
-  #servicios .servicio::marker {
-    color: #008cff;
-    font-size: 1.5em; }
+    #servicios .servicio li::marker {
+      color: var(--clr);
+      font-size: 1.5em; }
   #servicios .servicio h3 {
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+    font-family: "Montserrat", sans-serif; }
   #servicios .servicio img {
-    width: 100%; }
+    min-width: 167px;
+    max-width: 100%; }
 
 #sobreNosotros {
-  height: 1000px;
-  background-color: blueviolet; }
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  #sobreNosotros .titulos {
+    text-align: center;
+    width: 80%;
+    padding: 25px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif; }
+  #sobreNosotros .gridSobreNosotros {
+    width: 70%;
+    gap: 30px;
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: flex-end; }
+    #sobreNosotros .gridSobreNosotros .imagenSobreNosotros {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 400px; }
+      #sobreNosotros .gridSobreNosotros .imagenSobreNosotros img {
+        width: 100%;
+        margin-bottom: 10px; }
+      #sobreNosotros .gridSobreNosotros .imagenSobreNosotros h2 {
+        font-family: "Montserrat", sans-serif; }
+    #sobreNosotros .gridSobreNosotros .textoSobreNosotros h2 {
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 0.5em; }
+    #sobreNosotros .gridSobreNosotros .textoSobreNosotros p {
+      font-size: 1.2em;
+      font-family: "Roboto", sans-serif; }
 
 #contacto {
-  height: 1000px;
-  background-color: aqua; }
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  #contacto .titulos {
+    text-align: center;
+    width: 80%;
+    padding: 25px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif; }
 
 .whatsAppLogo {
   height: 45px;
@@ -98,12 +189,14 @@
   .whatsAppLogo img {
     height: 100%; }
   .whatsAppLogo:hover {
+    translate: 0 -8px;
     transform: scale(1.1);
     transition: 0.5s; }
 
 footer {
   height: 200px;
-  background-color: bisque;
+  width: 100%;
+  background-color: #a9c8e6;
   position: absolute;
   bottom: 0; }
 

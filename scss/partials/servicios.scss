@@ -1,37 +1,45 @@
+@import "../variables.scss";
 #servicios{
     display: flex;
     align-items: center;
     flex-direction: column;
-    .tituloServicios{
+    .titulos{
         text-align: center;
         width: 80%;
         padding: 25px;
         border-bottom: 1px solid black;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 400;
+        font-family: $titulos;
     }
     .gridServicios{
         gap: 1em;
         width: 80%;
-        margin-top: 25px;
+        padding-top: 30px;
+        padding-bottom: 60px;
         justify-content: space-between;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
     }
     .servicio{
-        li{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin-left: 15%;
+        .tituloDeServicio{
+            min-height: 46px;
         }
-        &::marker{
-            color: rgb(0, 140, 255);
-            font-size: 1.5em;
+        li{
+            font-family: $subtitulos;
+            line-height: 1.7em;
+            margin-left: 15%;
+            &::marker{
+                color: var(--clr);
+                font-size: 1.5em;
+            }
         }
         h3{
             text-align: center;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: $titulos;
         }
         img{
-            width: 100%;
+            min-width: 167px;
+            max-width: 100%;
         }
     }
 }
