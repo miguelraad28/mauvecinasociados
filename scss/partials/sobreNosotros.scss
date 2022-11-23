@@ -28,11 +28,13 @@
             max-width: 450px;
             h2{
                 font-family: $titulos;
+                font-weight: 400;
                 margin-bottom: 0.25em;
             }
             p{
                 font-size: 1.2em;
                 font-family: $subtitulos;
+                font-weight: 300;
             }
         }
     }

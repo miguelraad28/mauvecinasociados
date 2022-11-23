@@ -26,10 +26,15 @@
             }
         }
         .textoInicio {
-            font-weight: lighter;
             line-height: 2.5em;
             overflow-wrap: break-word;
             font-family: $titulos;
+            h1{
+                font-weight: 400;
+            }
+            h2{
+                font-weight: 300;
+            }
             button{
                 cursor: pointer;
                 font-family: $titulos;

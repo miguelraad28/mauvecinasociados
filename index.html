@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Mauvecin Asociados</title>
 </head>
 
@@ -18,10 +20,24 @@
                 src="./images/whatsapplogo.png">
         </a>
     </div>
+    <!-- Desktop Navbar -->
     <nav class="barraNavegacion" id="navbar">
-        <div class="navbarContainer">
+        <div class="mobileNavbarContainer">
+            <a data-bs-toggle="offcanvas" href="#offCanvas" role="button" aria-controls="offcanvasExample">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+            </a>
             <a href="#inicio"><img class="logoNavbar" src="./images/logoma.png"></a>
-            <ul>
+        </div>
+
+        <div class="desktopNavbarContainer">
+            <a href="#inicio"><img class="logoNavbar" src="./images/logoma.png"></a>
+            <ul class="navbarExtended">
                 <li><a href="#inicio">INICIO</a></li>
                 <li><a href="#servicios">SERVICIOS</a></li>
                 <li><a href="#sobreNosotros">SOBRE NOSOTROS</a></li>
@@ -29,6 +45,23 @@
             </ul>
         </div>
     </nav>
+    <!-- Mobile Navbar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offCanvas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <img src="./images/logoma.png">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <ul class="navbarShorted">
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#servicios">SERVICIOS</a></li>
+                    <li><a href="#sobreNosotros">SOBRE NOSOTROS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div id="inicio">
         <div class="mainContent">
             <div class="logoInicio">
@@ -36,7 +69,7 @@
             </div>
             <div class="textoInicio">
                 <h1>Solución de irregularidades fiscales</h1>
-                <h2>Trabajadores, profesionales, autónomos, PyMES.</h2>
+                <h2>Empleados, autónomos, PyMES, IVA.</h2>
                 <a href="#contacto"><button>
                         <p>¡CONTACTÁNOS YA!</p>
                     </button></a>
@@ -44,6 +77,7 @@
                     trabajadores, profesionales, autónomos, PyMES; ajustado al marco legal vigente, evaluando riesgos.
                 </h1>-->
             </div>
+
         </div>
     </div>
     <div id="servicios">
@@ -134,9 +168,16 @@
             </div>
             <div class="textoSobreNosotros">
                 <h2>MAUVECIN ASOCIADOS</h2>
-                <p>Estudio contable formalizado a finales de 2022 por <strong>Eugenia Renata Mauvecin</strong>, con el fin de la facilitación de <strong>soluciones y asesoramiento fiscal</strong> desde la comodidad de tu casa. Nos adecuamos a tus <strong>necesidades, seas empleado, autónomo, responsable inscripto, una PyME en sus inicios, etc.</strong></p>
+                <p>Estudio contable formalizado a finales de 2022 por <strong>Eugenia Renata Mauvecin</strong>, con el
+                    fin de la facilitación de <strong>soluciones y asesoramiento fiscal</strong> desde la comodidad de
+                    tu casa. Nos adecuamos a tus <strong>necesidades, seas empleado, autónomo, responsable inscripto,
+                        una PyME en sus inicios, etc.</strong></p>
 
-                <p>Eugenia Mauvecin,</strong> Contadora pública. Egresada de la <strong>UADE</strong> en 2022, con amplia experiencia trabajando en puestos tanto del ámbito público y privado en puestos de Payroll, a cargo de +30.000 sueldos en la <strong>Policia de laCiudad</strong>, en el área de Recursos humanos en <strong>PageGroup Argentina</strong> y actualmente trabajando en el área de fiscalización del <strong>BCRA</strong>.</p>
+                <p><strong>Eugenia Mauvecin</strong>, Contadora pública. Egresada de la <strong>UADE</strong> en 2022, con
+                    amplia experiencia trabajando en puestos tanto del ámbito público como privado. En puestos de Payroll, uno de ellos, estar a cargo de +30.000 sueldos en la <strong>Policia de la Ciudad</strong>; en el área de Recursos humanos
+                    en <strong>PageGroup Argentina</strong> y actualmente trabajando en el área de fiscalización del
+                    <strong>BCRA</strong>.
+                </p>
             </div>
         </div>
     </div>
