@@ -24,7 +24,7 @@
 .offcanvas-header {
   padding-right: 36px; }
   .offcanvas-header img {
-    height: 100px;
+    height: 70px;
     padding-left: 20px; }
   .offcanvas-header button {
     color: black;
@@ -50,7 +50,7 @@
     align-items: center;
     padding: 0 10px; }
     .mobileNavbarContainer img {
-      height: 80px; }
+      height: 50px; }
     .mobileNavbarContainer button {
       border: 2px solid #d4ebff;
       border-radius: 5px;
@@ -100,44 +100,36 @@
   justify-content: center;
   -webkit-animation: change 10s infinite ease-in-out;
   animation: change 10s infinite ease-in-out; }
-  #inicio .mainContent {
-    padding: 185px 0 60px;
-    display: flex;
-    max-width: 75vw;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 50px; }
-    #inicio .mainContent .logoInicio {
-      height: 400px; }
-      #inicio .mainContent .logoInicio img {
-        height: 100%; }
-    #inicio .mainContent .textoInicio {
-      line-height: 2.5em;
-      overflow-wrap: break-word;
-      font-family: "Montserrat", sans-serif; }
-      #inicio .mainContent .textoInicio h1 {
-        font-weight: 400; }
-      #inicio .mainContent .textoInicio h2 {
-        font-weight: 300; }
-      #inicio .mainContent .textoInicio button {
-        cursor: pointer;
-        font-family: "Montserrat", sans-serif;
-        font-size: 1em;
-        margin-top: 12px;
-        width: 100%;
-        height: 50px;
-        font-weight: 800;
-        background-color: white;
-        border: 0;
-        border-radius: 25px;
-        box-shadow: 0px 0px 5px #717a83;
-        transition: 0.5s; }
-        #inicio .mainContent .textoInicio button p {
-          margin-bottom: 0; }
-        #inicio .mainContent .textoInicio button:hover {
-          font-size: 1.1em;
-          background-color: aliceblue; }
+  #inicio .mainContent .logoInicio {
+    height: 400px; }
+    #inicio .mainContent .logoInicio img {
+      height: 100%; }
+  #inicio .mainContent .textoInicio {
+    line-height: 2.5em;
+    overflow-wrap: break-word;
+    font-family: "Montserrat", sans-serif; }
+    #inicio .mainContent .textoInicio h1 {
+      font-weight: 400; }
+    #inicio .mainContent .textoInicio h2 {
+      font-weight: 300; }
+    #inicio .mainContent .textoInicio button {
+      cursor: pointer;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1em;
+      margin-top: 12px;
+      width: 100%;
+      height: 50px;
+      font-weight: 800;
+      background-color: white;
+      border: 0;
+      border-radius: 25px;
+      box-shadow: 0px 0px 5px #717a83;
+      transition: 0.5s; }
+      #inicio .mainContent .textoInicio button p {
+        margin-bottom: 0; }
+      #inicio .mainContent .textoInicio button:hover {
+        font-size: 1.1em;
+        background-color: aliceblue; }
 
 @-webkit-keyframes change {
   0% {
@@ -154,6 +146,30 @@
     background-image: url("./images/banner2.jpg"); }
   66% {
     background-image: url("./images/banner3.jpg"); } }
+
+@media (min-width: 701px) {
+  .mainContent {
+    padding: 185px 0 60px;
+    display: flex;
+    max-width: 75vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; } }
+
+@media (max-width: 700px) {
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    align-items: center;
+    margin-top: 110px;
+    margin-bottom: 1.5em; }
+    .mainContent .logoInicio {
+      max-height: 200px; }
+    .mainContent .textoInicio {
+      margin-top: 1em;
+      text-align: center; } }
 
 #servicios {
   display: flex;
