@@ -3,44 +3,44 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    .titulos{
-        text-align: center;
-        width: 80%;
-        padding: 25px;
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-        font-weight: 400;
-        font-family: $titulos;
-    }
     .gridSobreNosotros{
-        width: 70%;
-        gap: 30px;
-        margin: 40px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: flex-end;
+        width: 80%;
+        gap: 2em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 60px;
         .imagenSobreNosotros{
             display: flex;
             flex-direction: column;
             text-align: center;
-            width: 400px;
+            max-width: 450px;
             img{
                 width: 100%;
-                margin-bottom: 10px;
             }
             h2{
                 font-family: $titulos;
             }
         }
         .textoSobreNosotros{
+            max-width: 450px;
             h2{
                 font-family: $titulos;
-                margin-bottom: 0.5em;
+                margin-bottom: 0.25em;
             }
             p{
                 font-size: 1.2em;
                 font-family: $subtitulos;
             }
+        }
+    }
+}
+@media (max-width: 1165px){
+    .textoSobreNosotros{
+        h2, p{
+            text-align: center;
         }
     }
 }

@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-
     <title>Mauvecin Asociados</title>
 </head>
 
@@ -19,60 +18,9 @@
                 src="./images/whatsapplogo.png">
         </a>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-expand-lg-own navbar-light barraNavegacion" id="navbar">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#inicio">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#servicios">SERVICIOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#sobreNosotros">SOBRE NOSOTROS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contacto">CONTACTO</a>
-                    </li>
-                </ul>
-            </div>
-    </nav>
-    <!--<nav class="navbar navbar-expand-lg bg-light barraNavegacion" id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#inicio">
-                <img src="./images/logoma.png">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#inicio">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicios">SERVICIOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobreNosotros">SOBRE NOSOTROS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">CONTACTO</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>-->
-    <!--<nav class="navbar" id="navbar">
+    <nav class="barraNavegacion" id="navbar">
         <div class="navbarContainer">
-            <a href="#inicio"><img src="./images/logoma.png"></a>
+            <a href="#inicio"><img class="logoNavbar" src="./images/logoma.png"></a>
             <ul>
                 <li><a href="#inicio">INICIO</a></li>
                 <li><a href="#servicios">SERVICIOS</a></li>
@@ -80,7 +28,7 @@
                 <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </div>
-    </nav>-->
+    </nav>
     <div id="inicio">
         <div class="mainContent">
             <div class="logoInicio">
@@ -105,7 +53,7 @@
         <div class="gridServicios">
             <div class="servicio" style="--clr:#66ff2f;">
                 <div class="tituloDeServicio">
-                    <h3>RÉGIMEN SIMPLIFICADO</h3>
+                    <h4>RÉGIMEN SIMPLIFICADO</h4>
                 </div>
                 <img src="./images/MONO-OK.webp">
                 <ul>
@@ -121,7 +69,7 @@
             </div>
             <div class="servicio" style="--clr:#1cc2ff;">
                 <div class="tituloDeServicio">
-                    <h3>RÉGIMEN GENERAL</h3>
+                    <h4>RÉGIMEN GENERAL</h4>
                 </div>
                 <img src="./images/MONO-OK.webp">
                 <ul>
@@ -135,7 +83,7 @@
             </div>
             <div class="servicio" style="--clr:#ffff1c;">
                 <div class="tituloDeServicio">
-                    <h3>RELACIÓN DE DEPENDENCIA</h3>
+                    <h4>RELACIÓN DE DEPENDENCIA</h4>
                 </div>
                 <img src="./images/MONO-OK.webp">
                 <ul>
@@ -150,7 +98,7 @@
             </div>
             <div class="servicio" style="--clr:#ff821c;">
                 <div class="tituloDeServicio">
-                    <h3>INGRESOS BRUTOS</h3>
+                    <h4>INGRESOS BRUTOS</h4>
                 </div>
                 <img src="./images/MONO-OK.webp">
                 <ul>
@@ -162,7 +110,7 @@
             </div>
             <div class="servicio" style="--clr:#ff1c1c;">
                 <div class="tituloDeServicio">
-                    <h3>PROCEDIMIENTO FISCAL</h3>
+                    <h4>PROCEDIMIENTO FISCAL</h4>
                 </div>
                 <img src="./images/MONO-OK.webp">
                 <ul>
@@ -186,11 +134,9 @@
             </div>
             <div class="textoSobreNosotros">
                 <h2>MAUVECIN ASOCIADOS</h2>
-                <p>Estudio contable formalizado a finales de 2022, fundado por <strong>Eugenia Mauvecin</strong>.
-                    Contadora pública egresada de la <strong>UADE</strong> en 2022, con amplia experiencia trabajando en
-                    puestos de Payroll en el ámbito público, a cargo de +30.000 sueldos en la <strong>Policia de la
-                        Ciudad</strong>, en el ámbito privado, en el área de Recursos humanos en <strong>PageGroup
-                        Argentina</strong> y actualmente trabajando en fiscalización en el <strong>BCRA</strong>.</p>
+                <p>Estudio contable formalizado a finales de 2022 por <strong>Eugenia Renata Mauvecin</strong>, con el fin de la facilitación de <strong>soluciones y asesoramiento fiscal</strong> desde la comodidad de tu casa. Nos adecuamos a tus <strong>necesidades, seas empleado, autónomo, responsable inscripto, una PyME en sus inicios, etc.</strong></p>
+
+                <p>Eugenia Mauvecin,</strong> Contadora pública. Egresada de la <strong>UADE</strong> en 2022, con amplia experiencia trabajando en puestos tanto del ámbito público y privado en puestos de Payroll, a cargo de +30.000 sueldos en la <strong>Policia de laCiudad</strong>, en el área de Recursos humanos en <strong>PageGroup Argentina</strong> y actualmente trabajando en el área de fiscalización del <strong>BCRA</strong>.</p>
             </div>
         </div>
     </div>
@@ -201,8 +147,8 @@
     </div>
     <footer></footer>
     <script src="./index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 </body>
 

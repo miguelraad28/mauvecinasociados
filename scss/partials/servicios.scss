@@ -4,42 +4,49 @@
     align-items: center;
     flex-direction: column;
     .titulos{
-        text-align: center;
-        width: 80%;
-        padding: 25px;
-        border-bottom: 1px solid black;
-        font-weight: 400;
-        font-family: $titulos;
+        border-top: 0;
     }
     .gridServicios{
-        gap: 1em;
+        gap: 2em 1em;
         width: 80%;
         padding-top: 30px;
         padding-bottom: 60px;
         justify-content: space-between;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
     .servicio{
         .tituloDeServicio{
-            min-height: 46px;
-        }
-        li{
-            font-family: $subtitulos;
-            line-height: 1.7em;
-            margin-left: 15%;
-            &::marker{
-                color: var(--clr);
-                font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 47px;
+            margin-bottom: 0.5em;
+            h4{
+                font-size: 1.2em;
+                text-align: center;
+                font-family: $titulos;
             }
         }
-        h3{
-            text-align: center;
-            font-family: $titulos;
-        }
         img{
-            min-width: 167px;
             max-width: 100%;
+            border: 1px solid blue;
+            border-radius: 12px;
+        }
+        ul{
+            margin-top: 1em ;
+            padding-left: 0;
+            li{
+                font-family: $subtitulos;
+                line-height: 1.7em;
+                margin-left: 15%;
+                margin-right: 5%;
+                font-size: calc(1rem + 0.1vw);
+                &::marker{
+                    color: var(--clr);
+                    font-size: 1.5em;
+                }
+            }
         }
     }
 }
