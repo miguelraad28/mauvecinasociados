@@ -45,6 +45,17 @@
         font-size: 1.5em;
     }
 }
+.offcanvas-footer{
+    padding-left: 36px;
+    padding-bottom: 1em;
+    a{ 
+        text-decoration: none;
+        color: black;
+        margin-bottom: 0;
+        font-size: 1em;
+        font-family: $descripciones;
+    }
+}
 // Mobile Navbar
 @media (max-width: 900px) {
     .mobileNavbarContainer{

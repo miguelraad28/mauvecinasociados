@@ -8,9 +8,6 @@
     }
     .gridServicios{
         gap: 2em 1em;
-        width: 80%;
-        padding-top: 30px;
-        padding-bottom: 60px;
         justify-content: space-between;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -26,7 +23,7 @@
                 font-size: 1.2em;
                 text-align: center;
                 font-family: $titulos;
-                font-weight: 400;
+                font-weight: 500;
             }
         }
         img{
@@ -38,7 +35,7 @@
             margin-top: 1em ;
             padding-left: 0;
             li{
-                font-family: $subtitulos;
+                font-family: $descripciones;
                 line-height: 1.7em;
                 margin-left: 15%;
                 margin-right: 5%;

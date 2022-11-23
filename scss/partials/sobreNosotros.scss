@@ -3,15 +3,12 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    .gridSobreNosotros{
-        width: 80%;
+    .flexboxSobreNosotros{
         gap: 2em;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        padding-top: 30px;
-        padding-bottom: 60px;
         .imagenSobreNosotros{
             display: flex;
             flex-direction: column;
@@ -21,6 +18,7 @@
                 width: 100%;
             }
             h2{
+                font-size: 400;
                 font-family: $titulos;
             }
         }
@@ -33,7 +31,7 @@
             }
             p{
                 font-size: 1.2em;
-                font-family: $subtitulos;
+                font-family: $descripciones;
                 font-weight: 300;
             }
         }

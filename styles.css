@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&display=swap");
 .barraNavegacion {
   position: fixed;
   z-index: 100;
@@ -41,6 +41,16 @@
   text-decoration: none;
   line-height: 2.6em;
   font-size: 1.5em; }
+
+.offcanvas-footer {
+  padding-left: 36px;
+  padding-bottom: 1em; }
+  .offcanvas-footer a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 0;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif; }
 
 @media (max-width: 900px) {
   .mobileNavbarContainer {
@@ -112,22 +122,24 @@
       font-weight: 400; }
     #inicio .mainContent .textoInicio h2 {
       font-weight: 300; }
-    #inicio .mainContent .textoInicio button {
-      cursor: pointer;
-      font-family: "Montserrat", sans-serif;
-      font-size: 1em;
+    #inicio .mainContent .textoInicio a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      text-decoration: none;
       margin-top: 12px;
       width: 100%;
       height: 50px;
-      font-weight: 800;
-      background-color: white;
       border: 0;
       border-radius: 25px;
+      background-color: white;
       box-shadow: 0px 0px 5px #717a83;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 1em;
       transition: 0.5s; }
-      #inicio .mainContent .textoInicio button p {
-        margin-bottom: 0; }
-      #inicio .mainContent .textoInicio button:hover {
+      #inicio .mainContent .textoInicio a:hover {
         font-size: 1.1em;
         background-color: aliceblue; }
 
@@ -179,9 +191,6 @@
     border-top: 0; }
   #servicios .gridServicios {
     gap: 2em 1em;
-    width: 80%;
-    padding-top: 30px;
-    padding-bottom: 60px;
     justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
@@ -195,7 +204,7 @@
       font-size: 1.2em;
       text-align: center;
       font-family: "Montserrat", sans-serif;
-      font-weight: 400; }
+      font-weight: 500; }
   #servicios .servicio img {
     max-width: 100%;
     border: 1px solid blue;
@@ -217,31 +226,29 @@
   display: flex;
   align-items: center;
   flex-direction: column; }
-  #sobreNosotros .gridSobreNosotros {
-    width: 80%;
+  #sobreNosotros .flexboxSobreNosotros {
     gap: 2em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 60px; }
-    #sobreNosotros .gridSobreNosotros .imagenSobreNosotros {
+    justify-content: center; }
+    #sobreNosotros .flexboxSobreNosotros .imagenSobreNosotros {
       display: flex;
       flex-direction: column;
       text-align: center;
       max-width: 450px; }
-      #sobreNosotros .gridSobreNosotros .imagenSobreNosotros img {
+      #sobreNosotros .flexboxSobreNosotros .imagenSobreNosotros img {
         width: 100%; }
-      #sobreNosotros .gridSobreNosotros .imagenSobreNosotros h2 {
+      #sobreNosotros .flexboxSobreNosotros .imagenSobreNosotros h2 {
+        font-size: 400;
         font-family: "Montserrat", sans-serif; }
-    #sobreNosotros .gridSobreNosotros .textoSobreNosotros {
+    #sobreNosotros .flexboxSobreNosotros .textoSobreNosotros {
       max-width: 450px; }
-      #sobreNosotros .gridSobreNosotros .textoSobreNosotros h2 {
+      #sobreNosotros .flexboxSobreNosotros .textoSobreNosotros h2 {
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
         margin-bottom: 0.25em; }
-      #sobreNosotros .gridSobreNosotros .textoSobreNosotros p {
+      #sobreNosotros .flexboxSobreNosotros .textoSobreNosotros p {
         font-size: 1.2em;
         font-family: "Roboto", sans-serif;
         font-weight: 300; }
@@ -251,10 +258,52 @@
     text-align: center; } }
 
 #contacto {
-  height: 500px;
   display: flex;
   align-items: center;
   flex-direction: column; }
+  #contacto .flexboxContacto {
+    width: 100%;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    padding: 3em 1em; }
+    #contacto .flexboxContacto form {
+      display: flex;
+      flex-direction: column;
+      width: 80%; }
+      #contacto .flexboxContacto form label {
+        margin-bottom: 0.5em;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.2em; }
+      #contacto .flexboxContacto form label, #contacto .flexboxContacto form input {
+        width: 100%; }
+      #contacto .flexboxContacto form input {
+        padding: 0 0.7em;
+        margin-bottom: 2em;
+        height: 2.5em; }
+      #contacto .flexboxContacto form textarea {
+        padding: 0.5em 0.7em;
+        width: 100%; }
+      #contacto .flexboxContacto form input, #contacto .flexboxContacto form textarea {
+        border-radius: 6px;
+        border: 0;
+        box-shadow: 0px 0px 3px #717a83; }
+      #contacto .flexboxContacto form button {
+        margin-top: 32px;
+        width: 100%;
+        height: 50px;
+        border: 0;
+        border-radius: 6px;
+        background-color: white;
+        box-shadow: 0px 0px 3px #717a83;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 1em;
+        transition: 0.5s; }
+        #contacto .flexboxContacto form button:hover {
+          font-size: 1.1em;
+          background-color: #f9f9f9; }
 
 .whatsAppLogo {
   height: 45px;
@@ -294,10 +343,18 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal; }
 
 .titulos {
+  width: 100%;
   text-align: center;
-  width: 80%;
   padding: 25px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  font-weight: 800;
+  font-weight: 400;
   font-family: "Montserrat", sans-serif; }
+
+#servicios, #sobreNosotros, #contacto {
+  max-width: 80%;
+  margin: auto; }
+
+.gridServicios, .flexboxSobreNosotros, .flexboxContacto {
+  margin: 30px 0 60px 0;
+  width: 100%; }
