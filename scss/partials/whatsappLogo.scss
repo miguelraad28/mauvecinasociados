@@ -1,17 +1,21 @@
-.whatsAppLogo{
-    height: 45px;
-    width: 45px;
+.whatsappLogo{
+    cursor: pointer;
     position: fixed;
     z-index: 10;
-    bottom: 25px;
-    right: 25px;
-    transition: 0.5s;
-    img{
-        height: 100%;
-    }
+    bottom: 0;
+    right: 0;
+    margin: 25px;
+    color: white;
+    padding: 12px;
+    background-color: #25d366;
+    border-radius: 50%;
+    transition: 1s;
     &:hover{
-        translate: 0 -8px;
         transform: scale(1.1);
-        transition: 0.5s;
+        translate: 0 -7px;
+        background-color: white;
+        color: #25d366;
+        padding: 10px;
+        box-shadow: 0 0 10px #25d366;
     }
 }

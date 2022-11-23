@@ -44,7 +44,7 @@
 
 .offcanvas-footer {
   padding-left: 36px;
-  padding-bottom: 1em; }
+  padding-bottom: 1.5em; }
   .offcanvas-footer a {
     text-decoration: none;
     color: black;
@@ -75,7 +75,7 @@
   .mobileNavbarContainer {
     display: none; }
   .desktopNavbarContainer {
-    width: 100%;
+    width: 100vw;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -265,13 +265,13 @@
     width: 100%;
     background-color: aliceblue;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-items: center;
+    grid-template-columns: repeat(1, minmax(100px, 500px));
+    justify-content: center;
     padding: 3em 1em; }
     #contacto .flexboxContacto form {
       display: flex;
       flex-direction: column;
-      width: 80%; }
+      width: 100%; }
       #contacto .flexboxContacto form label {
         margin-bottom: 0.5em;
         font-family: "Montserrat", sans-serif;
@@ -300,25 +300,31 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
         font-size: 1em;
-        transition: 0.5s; }
+        transition: 0.5s;
+        color: black; }
         #contacto .flexboxContacto form button:hover {
           font-size: 1.1em;
           background-color: #f9f9f9; }
 
-.whatsAppLogo {
-  height: 45px;
-  width: 45px;
+.whatsappLogo {
+  cursor: pointer;
   position: fixed;
   z-index: 10;
-  bottom: 25px;
-  right: 25px;
-  transition: 0.5s; }
-  .whatsAppLogo img {
-    height: 100%; }
-  .whatsAppLogo:hover {
-    translate: 0 -8px;
+  bottom: 0;
+  right: 0;
+  margin: 25px;
+  color: white;
+  padding: 12px;
+  background-color: #25d366;
+  border-radius: 50%;
+  transition: 1s; }
+  .whatsappLogo:hover {
     transform: scale(1.1);
-    transition: 0.5s; }
+    translate: 0 -7px;
+    background-color: white;
+    color: #25d366;
+    padding: 10px;
+    box-shadow: 0 0 10px #25d366; }
 
 footer {
   height: 200px;
@@ -352,7 +358,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif; }
 
 #servicios, #sobreNosotros, #contacto {
-  max-width: 80%;
+  max-width: 90%;
   margin: auto; }
 
 .gridServicios, .flexboxSobreNosotros, .flexboxContacto {

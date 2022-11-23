@@ -47,7 +47,7 @@
 }
 .offcanvas-footer{
     padding-left: 36px;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
     a{ 
         text-decoration: none;
         color: black;
@@ -87,7 +87,7 @@
         display: none;
     }
     .desktopNavbarContainer {
-        width: 100%;
+        width: 100vw;
         justify-content: center;
         align-items: center;
         display: flex;

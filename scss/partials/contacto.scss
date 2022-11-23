@@ -7,13 +7,13 @@
         width: 100%;
         background-color: aliceblue;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        justify-items: center;
+        grid-template-columns: repeat(1, minmax(100px, 500px));
+        justify-content: center;
         padding: 3em 1em;
         form{
             display: flex;
             flex-direction: column;
-            width: 80%;
+            width: 100%;
             label{
                 margin-bottom: 0.5em;
                 font-family: $titulos;
@@ -48,6 +48,7 @@
                 font-weight: 500;
                 font-size: 1em;
                 transition: 0.5s;
+                color: black;
                 &:hover{
                     font-size: 1.1em;
                     background-color: rgb(249, 249, 249);
