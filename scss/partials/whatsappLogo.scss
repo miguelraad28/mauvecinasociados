@@ -2,20 +2,20 @@
     cursor: pointer;
     position: fixed;
     z-index: 10;
-    bottom: 0;
-    right: 0;
-    margin: 25px;
-    color: white;
+    bottom: 25px;
+    right: 25px;
     padding: 12px;
+    color: white;
     background-color: #25d366;
     border-radius: 50%;
     transition: 1s;
     &:hover{
         transform: scale(1.1);
         translate: 0 -7px;
-        background-color: white;
         color: #25d366;
+        background-color: white;
         padding: 10px;
         box-shadow: 0 0 10px #25d366;
+            
     }
 }
