@@ -24,10 +24,10 @@
             overflow-wrap: break-word;
             font-family: $titulos;
             h1{
-                font-weight: 400;
+                font-weight: 500;
             }
             h2{
-                font-weight: 300;
+                font-weight: 400;
             }
             a{
                 display: flex;
@@ -87,7 +87,7 @@
         gap: 50px;
     }
 }
-@media (max-width: 700px) {
+@media (max-width: 701px) {
     .mainContent{
         display: flex;
         flex-direction: column;

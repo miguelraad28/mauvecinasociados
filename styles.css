@@ -3,18 +3,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&display=swap");
-.barraNavegacion {
+nav {
   position: fixed;
   z-index: 100;
   top: 0;
-  width: 100%;
-  transition: 0.6s;
-  padding: 20px;
+  width: 100vw;
   background-color: aliceblue; }
+
+.navbarContainer {
+  padding: 20px;
+  transition: 0.6s; }
 
 .scrollDown {
   padding: 5px;
-  background-color: rgba(240, 248, 255, 0.97);
+  background-color: rgba(240, 248, 255, 0.9);
   transition: 1s;
   box-shadow: 0px 0px 5px; }
 
@@ -119,9 +121,9 @@
     overflow-wrap: break-word;
     font-family: "Montserrat", sans-serif; }
     #inicio .mainContent .textoInicio h1 {
-      font-weight: 400; }
+      font-weight: 500; }
     #inicio .mainContent .textoInicio h2 {
-      font-weight: 300; }
+      font-weight: 400; }
     #inicio .mainContent .textoInicio a {
       display: flex;
       align-items: center;
@@ -169,7 +171,7 @@
     align-items: center;
     gap: 50px; } }
 
-@media (max-width: 700px) {
+@media (max-width: 701px) {
   .mainContent {
     display: flex;
     flex-direction: column;
@@ -253,7 +255,7 @@
         font-family: "Roboto", sans-serif;
         font-weight: 300; }
 
-@media (max-width: 1165px) {
+@media (max-width: 1036px) {
   .textoSobreNosotros h2, .textoSobreNosotros p {
     text-align: center; } }
 
@@ -327,7 +329,7 @@
 
 footer {
   height: 200px;
-  width: 100%;
+  width: 100vw;
   background-color: #a9c8e6;
   position: absolute;
   bottom: 0; }
@@ -337,7 +339,9 @@ footer {
   margin: 0;
   scroll-behavior: smooth;
   line-height: normal;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  scroll-margin: 100px;
+  overflow-x: hidden; }
 
 body {
   position: relative;

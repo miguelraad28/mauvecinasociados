@@ -1,18 +1,19 @@
 @import "../variables.scss";
-.barraNavegacion {
+nav {
     position: fixed;
     z-index: 100;
     top: 0;
-    width: 100%;
-    transition: 0.6s;
-    padding: 20px;
+    width: 100vw;
     background-color: aliceblue;
 }
-
+.navbarContainer{
+    padding: 20px;
+    transition: 0.6s;
+}
 
 .scrollDown {
     padding: 5px;
-    background-color: rgba(240, 248, 255, 0.97);
+    background-color: rgba(240, 248, 255, 0.9);
     transition: 1s;
     box-shadow: 0px 0px 5px;
 }
