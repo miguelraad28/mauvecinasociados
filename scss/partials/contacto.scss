@@ -9,11 +9,12 @@
         display: grid;
         grid-template-columns: repeat(1, minmax(100px, 500px));
         justify-content: center;
-        padding: 3em 1em;
+        padding: 2em 1em;
         form{
             display: flex;
             flex-direction: column;
             width: 100%;
+            padding: 10px;
             label{
                 margin-bottom: 0.5em;
                 font-family: $titulos;

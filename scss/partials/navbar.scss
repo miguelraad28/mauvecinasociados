@@ -5,6 +5,7 @@ nav {
     top: 0;
     width: 100vw;
     background-color: aliceblue;
+    transition: 0.6s;
 }
 .navbarContainer{
     padding: 20px;
@@ -15,7 +16,10 @@ nav {
     padding: 5px;
     background-color: rgba(240, 248, 255, 0.9);
     transition: 1s;
-    box-shadow: 0px 0px 5px;
+}
+.scrollDownShadow{
+    box-shadow: 0px 0px 5px black;
+    transition: 1s;
 }
 // Mobile Navbar
 .offcanvas{
@@ -58,7 +62,7 @@ nav {
     }
 }
 // Mobile Navbar
-@media (max-width: 900px) {
+@media (max-width: 901px) {
     .mobileNavbarContainer{
         display: flex;
         flex-direction: row;
@@ -75,6 +79,10 @@ nav {
             color: rgb(72, 77, 81);
             &:active{
                 background-color: rgb(230, 243, 255);
+            }
+            span{
+                translate: 0 3px;
+                overflow-y: hidden;
             }
         }
     }

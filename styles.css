@@ -8,7 +8,8 @@ nav {
   z-index: 100;
   top: 0;
   width: 100vw;
-  background-color: aliceblue; }
+  background-color: aliceblue;
+  transition: 0.6s; }
 
 .navbarContainer {
   padding: 20px;
@@ -17,8 +18,11 @@ nav {
 .scrollDown {
   padding: 5px;
   background-color: rgba(240, 248, 255, 0.9);
-  transition: 1s;
-  box-shadow: 0px 0px 5px; }
+  transition: 1s; }
+
+.scrollDownShadow {
+  box-shadow: 0px 0px 5px black;
+  transition: 1s; }
 
 .offcanvas {
   background-color: #f5faff; }
@@ -54,7 +58,7 @@ nav {
     font-size: 1em;
     font-family: "Roboto", sans-serif; }
 
-@media (max-width: 900px) {
+@media (max-width: 901px) {
   .mobileNavbarContainer {
     display: flex;
     flex-direction: row;
@@ -70,6 +74,9 @@ nav {
       color: #484d51; }
       .mobileNavbarContainer button:active {
         background-color: #e6f3ff; }
+      .mobileNavbarContainer button span {
+        translate: 0 3px;
+        overflow-y: hidden; }
   .desktopNavbarContainer {
     display: none; } }
 
@@ -113,12 +120,12 @@ nav {
   -webkit-animation: change 10s infinite ease-in-out;
   animation: change 10s infinite ease-in-out; }
   #inicio .mainContent .logoInicio {
-    height: 400px; }
+    height: calc(300px + 0.8vw); }
     #inicio .mainContent .logoInicio img {
       height: 100%; }
   #inicio .mainContent .textoInicio {
     line-height: 2.5em;
-    overflow-wrap: break-word;
+    padding: 10px;
     font-family: "Montserrat", sans-serif; }
     #inicio .mainContent .textoInicio h1 {
       font-weight: 500; }
@@ -161,17 +168,17 @@ nav {
   66% {
     background-image: url("./images/banner3.jpg"); } }
 
-@media (min-width: 701px) {
+@media (min-width: 1000px) {
   .mainContent {
     padding: 185px 0 60px;
     display: flex;
-    max-width: 75vw;
+    margin: auto;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 50px; } }
+    gap: 30px; } }
 
-@media (max-width: 701px) {
+@media (max-width: 1000px) {
   .mainContent {
     display: flex;
     flex-direction: column;
@@ -184,6 +191,10 @@ nav {
     .mainContent .textoInicio {
       margin-top: 1em;
       text-align: center; } }
+
+@media (min-width: 901px) and (max-width: 1000px) {
+  .mainContent {
+    margin-top: 150px; } }
 
 #servicios {
   display: flex;
@@ -200,8 +211,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 47px;
-    margin-bottom: 0.5em; }
+    height: 48px;
+    margin-bottom: 0.5em;
+    overflow-y: hidden; }
     #servicios .servicio .tituloDeServicio h4 {
       font-size: 1.2em;
       text-align: center;
@@ -269,11 +281,12 @@ nav {
     display: grid;
     grid-template-columns: repeat(1, minmax(100px, 500px));
     justify-content: center;
-    padding: 3em 1em; }
+    padding: 2em 1em; }
     #contacto .flexboxContacto form {
       display: flex;
       flex-direction: column;
-      width: 100%; }
+      width: 100%;
+      padding: 10px; }
       #contacto .flexboxContacto form label {
         margin-bottom: 0.5em;
         font-family: "Montserrat", sans-serif;
@@ -337,11 +350,10 @@ footer {
 * {
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
+  overflow-x: hidden;
   line-height: normal;
-  margin-bottom: 0;
-  scroll-margin: 100px;
-  overflow-x: hidden; }
+  scroll-behavior: smooth;
+  scroll-margin-top: 100px; }
 
 body {
   position: relative;

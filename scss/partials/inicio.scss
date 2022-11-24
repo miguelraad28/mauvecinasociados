@@ -13,7 +13,7 @@
     animation: change 10s infinite ease-in-out;
     .mainContent{
         .logoInicio {
-            height: 400px;
+            height: calc(300px + 0.8vw);
             
             img {
                 height: 100%;
@@ -21,7 +21,7 @@
         }
         .textoInicio {
             line-height: 2.5em;
-            overflow-wrap: break-word;
+            padding: 10px;
             font-family: $titulos;
             h1{
                 font-weight: 500;
@@ -76,18 +76,18 @@
         background-image: url("./images/banner3.jpg");
     }
 }
-@media (min-width: 701px) {
+@media (min-width: 1000px) {
     .mainContent{
         padding: 185px 0 60px;
         display: flex;
-        max-width: 75vw;
+        margin: auto;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 50px;
+        gap: 30px;
     }
 }
-@media (max-width: 701px) {
+@media (max-width: 1000px) {
     .mainContent{
         display: flex;
         flex-direction: column;
@@ -102,5 +102,10 @@
             margin-top: 1em;
             text-align: center;
         }
+    }
+}
+@media (min-width: 901px) and (max-width: 1000px) {
+    .mainContent{
+        margin-top: 150px;
     }
 }

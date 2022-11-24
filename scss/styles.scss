@@ -8,14 +8,12 @@
 *{
     padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
-    line-height: normal;
-    margin-bottom: 0;
-    scroll-margin: 100px;
     overflow-x: hidden;
+    line-height: normal;
+    scroll-behavior: smooth;
+    scroll-margin-top: 100px;
 }
 body{
-    
     position: relative;
     padding-bottom: calc(200px + 2em);
 }
