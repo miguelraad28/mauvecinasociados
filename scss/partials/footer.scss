@@ -1,7 +1,133 @@
-footer{
-    height: 200px;
-    width: 100vw;
+footer {
     background-color: rgb(169, 200, 230);
     position: absolute;
     bottom: 0;
+    width: 100%;
+
+    .footerContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        width: 100%;
+
+        ul {
+            list-style: none;
+        }
+
+        .footerDataAndNavbarContainer {
+            display: flex;
+            justify-content: center;
+
+            .footerData {
+                align-items: center;
+                padding: 1em;
+                display: flex;
+
+                img {
+                    width: 100px;
+                }
+
+                ul {
+                    padding-left: 0.7em;
+
+                    li {
+                        line-height: 1.5em;
+
+                        i {
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+
+            .footerNavbar {
+                padding: 1em;
+                display: flex;
+                flex-direction: column;
+
+                ul {
+                    padding-left: 0;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        width: 100%;
+                    }
+
+                    img {
+                        height: 70px;
+                    }
+                }
+
+            }
+        }
+
+        .creditosDeDesarrollo {
+            width: 100%;
+            display: flex;
+            grid-column: span 2;
+            justify-content: center;
+            background-color: rgb(91, 135, 179);
+
+            p {
+                margin-bottom: 0;
+                padding: 10px 18px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                i {
+                    margin-right: 6px;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 750px) {
+    body{
+        padding-bottom: 286px;
+    }
+    .creditosDeDesarrollo {
+        text-align: center;
+        flex-direction: column;
+
+        p {
+            padding: 5px;
+        }
+
+    }
+}
+@media (max-width: 610px) {
+    body{
+        padding-bottom: 533px;
+    }
+    .footerDataAndNavbarContainer{
+        flex-direction: column;
+        .footerData{
+            flex-direction: column;
+            justify-content: center; 
+            text-align: center;
+            img{
+                margin-bottom: 10px;
+            }
+            ul{
+                margin-bottom: 0;
+            }
+        }
+        .footerNavbar{
+            text-align: center;
+            margin-top: -1em;
+            align-items: center;
+        }
+    }
+}
+@media (min-width: 750px) {
+    body{
+        padding-bottom: 245px;
+    }
+    
 }

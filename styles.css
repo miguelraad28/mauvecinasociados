@@ -7,7 +7,7 @@ nav {
   position: fixed;
   z-index: 100;
   top: 0;
-  width: 100vw;
+  width: 100%;
   background-color: aliceblue;
   transition: 0.6s; }
 
@@ -75,7 +75,7 @@ nav {
       .mobileNavbarContainer button:active {
         background-color: #e6f3ff; }
       .mobileNavbarContainer button span {
-        translate: 0 3px;
+        translate: 0 1px;
         overflow-y: hidden; }
   .desktopNavbarContainer {
     display: none; } }
@@ -116,7 +116,6 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: center;
   -webkit-animation: change 10s infinite ease-in-out;
   animation: change 10s infinite ease-in-out; }
   #inicio .mainContent .logoInicio {
@@ -180,9 +179,9 @@ nav {
 
 @media (max-width: 1000px) {
   .mainContent {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    max-width: 90vw;
     align-items: center;
     margin-top: 110px;
     margin-bottom: 1.5em; }
@@ -341,23 +340,100 @@ nav {
     box-shadow: 0 0 10px #25d366; }
 
 footer {
-  height: 200px;
-  width: 100vw;
   background-color: #a9c8e6;
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  width: 100%; }
+  footer .footerContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    width: 100%; }
+    footer .footerContainer ul {
+      list-style: none; }
+    footer .footerContainer .footerDataAndNavbarContainer {
+      display: flex;
+      justify-content: center; }
+      footer .footerContainer .footerDataAndNavbarContainer .footerData {
+        align-items: center;
+        padding: 1em;
+        display: flex; }
+        footer .footerContainer .footerDataAndNavbarContainer .footerData img {
+          width: 100px; }
+        footer .footerContainer .footerDataAndNavbarContainer .footerData ul {
+          padding-left: 0.7em; }
+          footer .footerContainer .footerDataAndNavbarContainer .footerData ul li {
+            line-height: 1.5em; }
+            footer .footerContainer .footerDataAndNavbarContainer .footerData ul li i {
+              margin-right: 4px; }
+      footer .footerContainer .footerDataAndNavbarContainer .footerNavbar {
+        padding: 1em;
+        display: flex;
+        flex-direction: column; }
+        footer .footerContainer .footerDataAndNavbarContainer .footerNavbar ul {
+          padding-left: 0; }
+          footer .footerContainer .footerDataAndNavbarContainer .footerNavbar ul a {
+            text-decoration: none;
+            color: black;
+            width: 100%; }
+          footer .footerContainer .footerDataAndNavbarContainer .footerNavbar ul img {
+            height: 70px; }
+    footer .footerContainer .creditosDeDesarrollo {
+      width: 100%;
+      display: flex;
+      grid-column: span 2;
+      justify-content: center;
+      background-color: #5b87b3; }
+      footer .footerContainer .creditosDeDesarrollo p {
+        margin-bottom: 0;
+        padding: 10px 18px; }
+        footer .footerContainer .creditosDeDesarrollo p a {
+          color: white;
+          text-decoration: none; }
+        footer .footerContainer .creditosDeDesarrollo p i {
+          margin-right: 6px; }
+
+@media (max-width: 750px) {
+  body {
+    padding-bottom: 286px; }
+  .creditosDeDesarrollo {
+    text-align: center;
+    flex-direction: column; }
+    .creditosDeDesarrollo p {
+      padding: 5px; } }
+
+@media (max-width: 610px) {
+  body {
+    padding-bottom: 533px; }
+  .footerDataAndNavbarContainer {
+    flex-direction: column; }
+    .footerDataAndNavbarContainer .footerData {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; }
+      .footerDataAndNavbarContainer .footerData img {
+        margin-bottom: 10px; }
+      .footerDataAndNavbarContainer .footerData ul {
+        margin-bottom: 0; }
+    .footerDataAndNavbarContainer .footerNavbar {
+      text-align: center;
+      margin-top: -1em;
+      align-items: center; } }
+
+@media (min-width: 750px) {
+  body {
+    padding-bottom: 245px; } }
 
 * {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
   line-height: normal;
   scroll-behavior: smooth;
   scroll-margin-top: 100px; }
 
 body {
   position: relative;
-  padding-bottom: calc(200px + 2em); }
+  overflow-x: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;

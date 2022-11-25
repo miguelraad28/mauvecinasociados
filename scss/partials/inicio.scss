@@ -8,7 +8,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
     -webkit-animation: change 10s infinite ease-in-out;
     animation: change 10s infinite ease-in-out;
     .mainContent{
@@ -89,9 +88,9 @@
 }
 @media (max-width: 1000px) {
     .mainContent{
+        width: 100%;
         display: flex;
         flex-direction: column;
-        max-width: 90vw;
         align-items: center;
         margin-top: 110px;
         margin-bottom: 1.5em;
