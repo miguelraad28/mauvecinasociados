@@ -10,7 +10,6 @@
     margin: 0;
     line-height: normal;
     scroll-behavior: smooth;
-    scroll-margin-top: 100px;
 }
 body{
     position: relative;
@@ -30,6 +29,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: $titulos;
 }
 #servicios, #sobreNosotros, #contacto{
+    scroll-margin-top: 100px;
     max-width: 90%;
     margin: auto;
 }

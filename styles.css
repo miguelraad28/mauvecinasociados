@@ -16,12 +16,12 @@ nav {
   transition: 0.6s; }
 
 .scrollDown {
-  padding: 5px;
+  box-shadow: 0px 0px 5px black;
   background-color: rgba(240, 248, 255, 0.9);
   transition: 1s; }
 
-.scrollDownShadow {
-  box-shadow: 0px 0px 5px black;
+.scrollDownPadding {
+  padding: 5px;
   transition: 1s; }
 
 .offcanvas {
@@ -364,6 +364,9 @@ footer {
           padding-left: 0.7em; }
           footer .footerContainer .footerDataAndNavbarContainer .footerData ul li {
             line-height: 1.5em; }
+            footer .footerContainer .footerDataAndNavbarContainer .footerData ul li a {
+              color: black;
+              text-decoration: none; }
             footer .footerContainer .footerDataAndNavbarContainer .footerData ul li i {
               margin-right: 4px; }
       footer .footerContainer .footerDataAndNavbarContainer .footerNavbar {
@@ -428,8 +431,7 @@ footer {
   padding: 0;
   margin: 0;
   line-height: normal;
-  scroll-behavior: smooth;
-  scroll-margin-top: 100px; }
+  scroll-behavior: smooth; }
 
 body {
   position: relative;
@@ -449,6 +451,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif; }
 
 #servicios, #sobreNosotros, #contacto {
+  scroll-margin-top: 100px;
   max-width: 90%;
   margin: auto; }
 

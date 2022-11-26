@@ -51,10 +51,10 @@
         <div class="offcanvas-body">
             <div>
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#servicios">SERVICIOS</a></li>
-                    <li><a href="#sobreNosotros">SOBRE NOSOTROS</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li class="mobileNavbarButton"><a href="#inicio">INICIO</a></li>
+                    <li class="mobileNavbarButton"><a href="#servicios">SERVICIOS</a></li>
+                    <li class="mobileNavbarButton"><a href="#sobreNosotros">SOBRE NOSOTROS</a></li>
+                    <li class="mobileNavbarButton"><a href="#contacto">CONTACTO</a></li>
                 </ul>
             </div>
         </div>
@@ -84,32 +84,28 @@
         <div class="gridServicios">
             <div class="servicio" style="--clr:#66ff2f;">
                 <div class="tituloDeServicio">
-                    <h4>RÉGIMEN SIMPLIFICADO</h4>
+                    <h4>MONOTRIBUTISTA</h4>
                 </div>
                 <img src="./images/MONO-OK.webp">
                 <ul>
                     <li>Altas, bajas y constancias</li>
                     <li>Recategorización</li>
-                    <li>Volante Electrónico de Pago (VEP)</li>
                     <li>Estado de deuda - Plan de pagos</li>
                     <li>Puntos de venta y facturación</li>
                     <li>Gestión de obra social</li>
-                    <li>Devolución de percepciones</li>
                     <li>Análisis de transición al régimen general</li>
                 </ul>
             </div>
             <div class="servicio" style="--clr:#1cc2ff;">
                 <div class="tituloDeServicio">
-                    <h4>RÉGIMEN GENERAL</h4>
+                    <h4>RESPONSABLE INSCRIPTO</h4>
                 </div>
                 <img src="./images/MONO-OK.webp">
                 <ul>
                     <li>Alta de responsable inscripto (IVA)</li>
                     <li>Liquidaciones mensuales y anuales</li>
                     <li>Autónomos (Aportes jubilatorios)</li>
-                    <li>Volante Electrónico de Pago (VEP)</li>
-                    <li>Ganancias - Liquidación anual</li>
-                    <li>Bienes personales - Liquidación anual</li>
+                    <li>Impuesto a las ganancias y bienes personales</li>
                 </ul>
             </div>
             <div class="servicio" style="--clr:#ffff1c;">
@@ -118,18 +114,16 @@
                 </div>
                 <img src="./images/MONO-OK.webp">
                 <ul>
-                    <li>Control de trabajo registrado</li>
+                    <li>Indemnización por despido con/sin justa causa</li>
                     <li>Control de obligaciones del empleador</li>
                     <li>Retención de ganancias (4ta categoría)</li>
                     <li>SIRADIG trabajador - Declaración jurada F-572</li>
-                    <li>Liquidación mensual, final y ajuste anual</li>
-                    <li>Pluriempleo</li>
-                    <li>Indemnización por despido con/sin justa causa</li>
+                    
                 </ul>
             </div>
             <div class="servicio" style="--clr:#ff821c;">
                 <div class="tituloDeServicio">
-                    <h4>INGRESOS BRUTOS</h4>
+                    <h4>INGRESOS BRUTOS (IIBB)</h4>
                 </div>
                 <img src="./images/MONO-OK.webp">
                 <ul>
@@ -141,12 +135,12 @@
             </div>
             <div class="servicio" style="--clr:#ff1c1c;">
                 <div class="tituloDeServicio">
-                    <h4>PROCEDIMIENTO FISCAL</h4>
+                    <h4>CONTRIBUYENTE VS AFIP</h4>
                 </div>
                 <img src="./images/MONO-OK.webp">
                 <ul>
                     <li>Actuación ante intimaciones</li>
-                    <li>Contribuyente Vs. AFIP</li>
+
                     <li>Representación en el ámbito administrativo</li>
                     <li>Anáisis de sanciones</li>
                     <li>Defensa - Recursos Legales</li>
@@ -189,16 +183,20 @@
             <h2>CONTACTÁNOS</h2>
         </div>
         <div class="flexboxContacto">
-            <form action="mailto:miguelraad2020@gmail.com">
-                <label for="">Nombre y Apellido</label>
-                <input type="text" placeholder="Juan Pérez">
-                <label for="">Email</label>
-                <input type="email" placeholder="email@email.com">
-                <label for="">Asunto</label>
-                <input type="text" placeholder="Ej: Recategorización / Facturación">
-                <label for="">Detallanos tu consulta</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button>ENVIAR CONSULTA</button>
+            <form action="https://formsubmit.co/879d0679e77c6e07be24e990b3077039" method="POST">
+                <label for="NombreYApellido">Nombre y Apellido</label>
+                <input name="Nombre y Apellido" type="text" placeholder="Juan Pérez" id="nombreYApellido">
+                <label for="Email">Email</label>
+                <input name="Email" type="email" placeholder="email@email.com" id="email">
+                <label for="Asunto">Asunto</label>
+                <input name="Asunto" type="text" placeholder="Ej: Recategorización / Facturación" id="asunto">
+                <label for="Consulta">Detallanos tu consulta</label>
+                <textarea name="Detalle" id="" cols="30" rows="10" id="detalle"></textarea>
+
+                <button type="submit" disabled="true" id="botonContacto">ENVIAR CONSULTA</button>
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://localhost:5500">
             </form>
         </div>
     </div>
@@ -219,9 +217,9 @@
                     <div>
                         <ul>
                             <li><i class="bi bi-geo-alt-fill"></i>Ciudad Autónoma de Buenos Aires.</li>
-                            <li><i class="bi bi-envelope"></i>hola@mauvecinasociados.com.ar</li>
-                            <li><i class="bi bi-instagram"></i>@mauvecinasociados</li>
-                            <li><i class="bi bi-whatsapp"></i>11 64679257</li>
+                            <li><a target="_blank" href="mailto:hola@mauvecinasociados.com.ar"><i class="bi bi-envelope"></i>hola@mauvecinasociados.com.ar</a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/mauvecinasociados/"><i class="bi bi-instagram"></i>@mauvecinasociados</a></li>
+                            <li><a target="_blank" href="https://api.whatsapp.com/send?phone=1164679257"><i class="bi bi-whatsapp"></i>11 64679257</a></li>
                         </ul>
                     </div>
                 </div>
@@ -239,11 +237,11 @@
             </div>
             <div class="creditosDeDesarrollo">
                 <p>
-                    <a href="https://github.com/miguelraad28"><i class="bi bi-github"></i>Pagina web desarrollada por
+                    <a target="_blank" href="https://github.com/miguelraad28"><i class="bi bi-github"></i>Pagina web desarrollada por
                         Miguel
                         Raad</a>
                 </p>
-                <p><a href="https://www.linkedin.com/in/miguel-raad-desarrollador-web/"><i
+                <p><a target="_blank"  href="https://www.linkedin.com/in/miguel-raad-desarrollador-web/"><i
                             class="bi bi-linkedin"></i>Contacto: miguelraad2020@gmail.com</a></p>
             </div>
         </div>

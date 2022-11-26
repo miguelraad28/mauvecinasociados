@@ -32,9 +32,13 @@ footer {
 
                     li {
                         line-height: 1.5em;
-
+                        a{
+                            color: black;
+                            text-decoration: none;
+                        }
                         i {
                             margin-right: 4px;
+
                         }
                     }
                 }

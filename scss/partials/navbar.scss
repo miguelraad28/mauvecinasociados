@@ -13,12 +13,12 @@ nav {
 }
 
 .scrollDown {
-    padding: 5px;
+    box-shadow: 0px 0px 5px black;
     background-color: rgba(240, 248, 255, 0.9);
     transition: 1s;
 }
-.scrollDownShadow{
-    box-shadow: 0px 0px 5px black;
+.scrollDownPadding{
+    padding: 5px;
     transition: 1s;
 }
 // Mobile Navbar
