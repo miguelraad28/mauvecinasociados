@@ -1,10 +1,6 @@
 const navbarContainer = document.getElementById("navbarContainer")
 window.addEventListener("scroll", function () {
-    navbarContainer.classList.toggle("scrollDownPadding", window.scrollY > 0);
-})
-const navbar = document.getElementById("navbar")
-window.addEventListener("scroll", function () {
-    navbar.classList.toggle("scrollDown", window.scrollY > 0);
+    navbarContainer.classList.toggle("scrollDown", window.scrollY > 0);
 })
 // Cierre propio para el mobileNavbar (offCanvas) debido a que el data-bs-dismiss de bootstrap no me permite realizar la navegación a través de la página, cierra el offCanvas y la navegación queda a medias.
 const offCanvas = document.getElementById("offCanvas")
@@ -24,3 +20,12 @@ document.querySelectorAll('.mobileNavbarButton').forEach(item => {
 
     })
 })
+// formContacto
+const formContacto = document.getElementById("formContacto")
+const botonContacto = document.getElementById("botonContacto")
+formContacto.addEventListener("submit", (e) => {
+    e.preventDefault()
+    const data = new FormData(formContacto)
+    console.log(data)
+})
+

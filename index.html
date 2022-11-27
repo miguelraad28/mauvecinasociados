@@ -58,9 +58,6 @@
                 </ul>
             </div>
         </div>
-        <div class="offcanvas-footer">
-            <a href="mailto:hola@mauvecinasociados.com.ar">hola@mauvecinasociados.com.ar</a>
-        </div>
     </div>
     <div id="inicio">
         <div class="mainContent">
@@ -183,20 +180,23 @@
             <h2>CONTACTÁNOS</h2>
         </div>
         <div class="flexboxContacto">
-            <form action="https://formsubmit.co/879d0679e77c6e07be24e990b3077039" method="POST">
+            <form id="formContacto">
                 <label for="NombreYApellido">Nombre y Apellido</label>
-                <input name="Nombre y Apellido" type="text" placeholder="Juan Pérez" id="nombreYApellido">
+                <input id="nombre" name="nombre" type="text" placeholder="Juan Pérez" >
+                
                 <label for="Email">Email</label>
-                <input name="Email" type="email" placeholder="email@email.com" id="email">
+                <input id="email" name="email" type="email" placeholder="email@email.com" >
+
                 <label for="Asunto">Asunto</label>
-                <input name="Asunto" type="text" placeholder="Ej: Recategorización / Facturación" id="asunto">
-                <label for="Consulta">Detallanos tu consulta</label>
-                <textarea name="Detalle" id="" cols="30" rows="10" id="detalle"></textarea>
+                <input id="asunto" name="asunto" type="text" placeholder="Ej: Recategorización / Facturación" >
 
-                <button type="submit" disabled="true" id="botonContacto">ENVIAR CONSULTA</button>
+                <label for="Detalle">Detallanos tu consulta</label>
+                <textarea id="detalle" name="detalle" cols="30" rows="10" ></textarea>
 
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="http://localhost:5500">
+                <button type="submit" id="botonContacto">ENVIAR CONSULTA</button>
+
+                <!--<input type="hidden" name="_captcha" value="false"> action="https://formsubmit.co/879d0679e77c6e07be24e990b3077039"
+                <input type="hidden" name="_next" value="http://localhost:5500">-->
             </form>
         </div>
     </div>
