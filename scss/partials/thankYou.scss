@@ -1,0 +1,27 @@
+@import "../variables.scss";
+.thankYouContainer{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 4em;
+    padding: 1.5em;
+    align-items: center;
+    img{
+        height: calc(10em + 3vw);
+        margin-right: 2em;
+    }
+    .texto{
+    
+        h1{
+            font-size: calc(0.7em + 3vw);
+            font-family: $titulos;
+            margin-bottom: 0.25em;
+        }
+        h4{
+            font-family: $descripciones;
+        }
+        
+    }
+}

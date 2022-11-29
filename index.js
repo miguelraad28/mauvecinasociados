@@ -22,10 +22,27 @@ document.querySelectorAll('.mobileNavbarButton').forEach(item => {
 })
 // formContacto
 const formContacto = document.getElementById("formContacto")
-const botonContacto = document.getElementById("botonContacto")
+const nombre = document.getElementById("nombre")
+const email = document.getElementById("email")
 formContacto.addEventListener("submit", (e) => {
     e.preventDefault()
-    const data = new FormData(formContacto)
-    console.log(data)
+    console.log("hi")
+    Swal.fire({
+        icon: 'success',
+        title: '¡Formulario enviado!',
+        text: `Excelente ${nombre.value}, recibirás una respuesta lo antes posible a través de ${email.value}.`,
+        footer: `<a href="https://api.whatsapp.com/send?phone=1164679257">También nos podés contactar vía WhatsApp haciendo click acá!</a>`
+    })
 })
 
+/*Swal.fire({
+    icon: 'error',
+    title: '¡Faltan datos!',
+    text: 'Por favor, completálos así nos podemos contactar mas eficientemente.',
+})*/
+/*Swal.fire({
+    icon: 'success',
+    title: '¡Formulario enviado!',
+    text: `Excelente ${formData.get("nombre")}, recibirás una respuesta lo antes posible a través de ${formData.get("email")}.`,
+    footer: `<a href="https://api.whatsapp.com/send?phone=1164679257">También nos podés contactar vía WhatsApp haciendo click acá!</a>`
+})*/

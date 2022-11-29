@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&display=swap");
 nav {
   position: fixed;
   z-index: 100;
@@ -54,8 +56,7 @@ nav {
     align-items: center;
     padding: 0 10px; }
     .mobileNavbarContainer img {
-      height: 50px;
-      margin-right: 1em; }
+      height: 50px; }
     .mobileNavbarContainer button {
       border: 2px solid #d4ebff;
       border-radius: 5px;
@@ -418,6 +419,25 @@ footer {
   body {
     padding-bottom: 245px; } }
 
+.thankYouContainer {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 4em;
+  padding: 1.5em;
+  align-items: center; }
+  .thankYouContainer img {
+    height: calc(10em + 3vw);
+    margin-right: 2em; }
+  .thankYouContainer .texto h1 {
+    font-size: calc(0.7em + 3vw);
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0.25em; }
+  .thankYouContainer .texto h4 {
+    font-family: "Roboto", sans-serif; }
+
 * {
   padding: 0;
   margin: 0;
@@ -449,3 +469,12 @@ h1, h2, h3, h4, h5, h6 {
 .gridServicios, .flexboxSobreNosotros, .flexboxContacto {
   margin: 30px 0 60px 0;
   width: 100%; }
+
+.swal2-title, .swal2-html-container, .swal2-styled.swal2-confirm {
+  font-family: "Montserrat", sans-serif; }
+
+.swal2-styled.swal2-confirm {
+  background-color: #508dff; }
+
+.swal2-footer a {
+  color: black; }
