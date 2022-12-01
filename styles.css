@@ -212,7 +212,6 @@ nav {
       font-weight: 500; }
   #servicios .servicio img {
     max-width: 100%;
-    border: 1px solid blue;
     border-radius: 12px; }
   #servicios .servicio ul {
     margin-top: 1em;
