@@ -27,10 +27,15 @@
                 font-weight: 500;
             }
         }
-        img{
-            max-width: 100%;
-            border-radius: 12px;
+        .iconoDeServicio{
+            display: flex;
+            justify-content: center;
+            img{
+                max-width: 80%;
+                border-radius: 12px;
+            }
         }
+
         ul{
             margin-top: 1em ;
             padding-left: 0;

@@ -210,9 +210,12 @@ nav {
       text-align: center;
       font-family: "Montserrat", sans-serif;
       font-weight: 500; }
-  #servicios .servicio img {
-    max-width: 100%;
-    border-radius: 12px; }
+  #servicios .servicio .iconoDeServicio {
+    display: flex;
+    justify-content: center; }
+    #servicios .servicio .iconoDeServicio img {
+      max-width: 80%;
+      border-radius: 12px; }
   #servicios .servicio ul {
     margin-top: 1em;
     padding-left: 0; }
